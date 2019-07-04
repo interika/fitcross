@@ -1,0 +1,59 @@
+.header{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+.hlogo {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 30px 0 20px 30px;
+    align-items: center;
+
+    &__img{
+        position: absolute;
+        background: $mainred;
+        width: 55px;
+        height: 55px;
+        transform: rotate(45deg);
+        margin: 5px 0 0 -2px;
+        border-radius: 8px;  
+    }
+    &__let{
+        color: white;
+        font: 700 24px Oswald;
+        margin: 5px 40px 0 12px;
+        z-index: 1;
+    }
+  
+    &__title{
+        text-transform: uppercase;
+        color: white;
+            &_first{
+            margin:0;
+            font: 700 24px Oswald;
+            }
+            &_second{
+             font: normal 700 14px Oswald;
+             margin: -7px 0 -2px 0;
+            }
+             &_third{
+            color: #8d8d8d;
+            font: normal 700 8px Oswald;
+            margin:0;
+            }
+        }
+
+    }
+}
+.submenu{
+    color: #8d8d8d;
+    margin: 35px 50px 0 0px;
+    &__im{
+        font-size: 23px;
+    }
+}

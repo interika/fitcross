@@ -1,0 +1,185 @@
+
+.slider-arrows{
+  top: 46%;
+}
+.slider-item {
+  margin: auto;
+  position: relative;
+  max-height: 565px;
+
+  &__pic {
+    background: rgba(0, 0, 0, 0.7);
+    height: 560px;
+
+    &_over {
+      background: url(../i/mainback.png);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    &_im1 {
+      background: url(../i/sport1.jpg) no-repeat;
+      background-size: cover;
+    }
+    &_im2 {
+      background: url(../i/sport7.jpg) no-repeat center;
+      background-size: cover;
+    }
+    &_im3 {
+      background: url(../i/slide1.jpg) no-repeat;
+      background-size: cover;
+    }
+  }
+}
+// CONTENT
+.logo{
+  display: inline-block;
+  position: absolute;
+  top: 230px;
+  left: 90px;
+  &-block{
+      background: $darkgrey;
+      width: 75px;
+      height: 75px;
+      transform: rotate(45deg);
+      border-radius: 8px; 
+     
+    &__lett{
+      color: white;
+      font: 700 37px Oswald;
+      margin: 5px 40px 0 12px;
+      z-index: 1;
+      position: absolute;
+      top: 9px;
+      left: 19px;
+      margin:0;
+    }
+  }
+}
+.disc-text{
+  display: flex;
+  flex-direction: column;
+  align-items:  start;
+  overflow: hidden;
+  width: 440px;
+  color: #fff;
+  margin-left: 200px;
+
+  &__title1{
+    font: 22px/30px Oswald;   
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+  &__title2{
+    font: 45px/66px Oswald;
+    text-transform: uppercase;
+  }
+  &__text{
+    font: 300 16px/24px Oswald;
+    text-align: left;
+  }
+}
+.button-block{
+  display: inline-block;
+  position: absolute;
+  top:150px;
+  left:600px;
+}
+.train-but{
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: 16px;
+  &-items{
+    &__block{
+    position: absolute;
+    background: $mainred;
+    width: 75px;
+    height: 75px;
+    transform: rotate(45deg);
+    border-radius: 8px; 
+    cursor: pointer;
+      &_pos1{
+        top: 60px;
+        left: 70px;
+      }
+      &_pos2{
+        top: 115px;
+        left: 0;
+      }
+      
+        
+      
+    }
+ 
+    &__text{
+      text-transform: uppercase;
+      text-align: center;
+    
+      color: white;
+      font: 400 16px/20px Oswald;
+      margin: 10px 15px 0 18px;
+      z-index: 1;
+      // top: 207px;
+      // left: 97px;
+      &_pos1{
+        top: 60px;
+        left: 70px;
+        margin: 20px 0 0 16px;    
+      }
+      &_pos2{
+        top: 115px;
+        left: 0;
+        margin: 20px 0 0 16px;    
+      }
+    }
+  } 
+}
+.social-but{
+  display: inline-block !important;
+  position: absolute;
+  top: 15px;
+
+  &__block{
+    left: 150px;
+    top: 34px;
+    position: absolute;
+    background: white;
+    opacity: 0.4;
+    width: 55px;
+    height: 55px;
+    transform: rotate(45deg);
+    border-radius: 5px; 
+    &_pos1{
+      top: 76px;
+      left: 194px;
+    }
+    &_pos2{
+      top: 120px;
+      left: 150px;
+    }
+  }
+  &__ico{
+    position: absolute;
+    margin: 10px 15px 0 18px;
+    top: 37px;
+    left: 143px;
+    &_pos1{
+      top: 80px;
+    left: 188px;
+    }
+    &_pos2{
+      top: 120px;
+      left: 145px;
+    }
+  }
+}
+.svg-icon{
+  width: 30px;
+  height: 30px;
+}

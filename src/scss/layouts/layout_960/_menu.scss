@@ -1,0 +1,84 @@
+
+.container-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    .menu{
+        display: inline-block;
+        &-back{
+            position: absolute;
+            margin:  0 0 0 0;
+            overflow: hidden;
+            right: 0;
+            top: 0; 
+        }
+         &-logo{    
+            position: absolute;
+            background: $mainred;
+            width: 55px;
+            height: 55px;
+            transform: rotate(45deg);
+            margin: 5px 0 0 -2px;
+            border-radius: 8px; 
+            top: 32px;
+            right: 50px;
+            &__lett{
+                display: inline-block !important;
+                position: absolute;
+                color: white;
+                text-align: center;
+                font: 700 24px Oswald;
+                top: 35px;
+                right: 65px;
+                margin: 12px 0 0 12px;
+            }
+        }
+        &-social{
+            top: 315px;
+            right: 35px;
+            position: absolute;
+            &__ico{
+                margin-top: 20px;
+                &_link{
+                    display: inline-block;
+                    margin-right: 6px;
+                    &:last-of-type{
+                        margin-right:0;
+                    }
+                }
+
+            }
+        }
+    &-search{
+        z-index: 5;
+        color: white;
+        }
+    &-nav{
+        top:0;
+        right: 0;
+        position: absolute;
+        width: 200px;
+        &__items{
+            width: 200px;
+            list-style: none;
+            position: absolute;
+            top: 100px;
+            right: 32px;
+            line-height: 28px !important;
+        }
+        &__item{
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            text-align: right;
+            cursor: pointer;
+        }
+    }
+ }
+}
+.svg-icon_menu{
+    width: 15px;
+    height: 15px;
+  }
+

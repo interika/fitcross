@@ -1,0 +1,90 @@
+.container-form{
+    background-color: #b71c1c;
+    color:white;
+}
+.contact-form{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 67px;
+    padding-bottom: 43px;
+    &__title{
+        text-transform: uppercase;
+        font: 35px/44px Oswald;
+        text-transform: uppercase;
+        margin: 0;
+        &:after {
+            content: "";
+            display: block;
+            margin: 17px auto 15px;
+            width: 70px;
+            height: 1px;
+            background: #fff;
+        }
+    }
+    &__text{
+        margin: 10px 10%;
+        font: 16px/22px Oswald;
+    }
+    &__downtext{
+        margin: 0 10%;
+        font: 16px/22px Oswald;
+        margin: 30px 10%;
+    }
+    &__greeting{
+        text-transform: uppercase;
+        font: 35px/44px Oswald;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+.contact{
+    &-social {
+        &__ico {
+            display: flex;
+            justify-content:center;
+           
+            
+          &_link {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 15px;
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+}
+.svg-icon_contact{
+    width: 20px;
+    height: 20px;
+}
+.cont-form{
+    &__input{
+        width: 100%;
+    }
+}
+.form-control{
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font: 400 16px/24px "Open Sans",sans-serif!important;
+    margin: 12px 0 12px 0;
+    min-height: 40px;
+    padding: 0 50px;
+}
+.btn-form{
+    display: inline-block;
+    padding: 6px 50px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,71 @@
+.offer{
+    background: url(../i/sport9.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 67px;
+    padding-bottom: 43px;
+    color:white;
+    &-btn{
+        border: 2px solid #b71c1c;
+        background: #b71c1c;
+        color:white;
+        transition: background 0.3s;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.4;
+        text-align: center;
+        text-decoration: none;
+        width: 150px;
+        margin: auto;
+    }
+    &__title{
+        text-transform: uppercase;
+        font: 35px/44px Oswald;
+        text-transform: uppercase;
+        margin: 0;
+        &:after {
+            content: "";
+            display: block;
+            margin: 17px auto 15px;
+            width: 70px;
+            height: 1px;
+            background: #cfcfcf;
+        }
+    }
+    &__text{
+        margin: 10px  15px;
+        font: 400 16px/26px "Open Sans",sans-serif;
+    }
+    &__first-title{
+        text-align: center;
+        display: block;
+        font: 22px/32px Oswald;
+        opacity: 0.7;
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+    }
+
+    
+    &__first-off{
+        font-size: 16px;
+        margin: 0 0 5px 0;
+        &_text{
+            display: inline-block;
+            margin-bottom: 10px;
+            font: 400 16px/26px "Open Sans",sans-serif;
+        }
+    }
+}
+.price{
+    width: 30px;
+    text-align: center;
+    background: #b71c1c;
+    color: #fff;
+    border-radius: 3px;
+    padding: 1px 10px;
+    margin-left: 5px;
+}

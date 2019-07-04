@@ -1,0 +1,59 @@
+.gallery {
+  background: url(../i/tuman.jpg) no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 67px;
+  padding-bottom: 43px;
+  &-title {
+    text-transform: uppercase;
+    font: 35px/44px Oswald;
+    text-transform: uppercase;
+    margin: 0;
+    &:after {
+      content: "";
+      display: block;
+      margin: 17px auto 15px;
+      width: 70px;
+      height: 1px;
+      background: #000;
+    }
+  }
+  &-text {
+    margin: 15px 15px;
+    font: 400 16px/26px "Open Sans", sans-serif;
+    color: black;
+    opacity: 0.8;
+  }
+}
+
+.galgrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dotts-gallery {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    & ul {
+      list-style: none;
+      & li {
+        background: #b71c1c;
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        border-radius: 3px;
+        display: inline-block;
+        margin: 0 5px;
+        opacity: 0.5;
+        cursor: pointer;
+        &.slick-active {
+          opacity: 1;
+        }
+        & button {
+          text-indent: -9999px;
+        }
+      }
+    }
+  }

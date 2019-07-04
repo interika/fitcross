@@ -1,0 +1,13 @@
+.offer__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+.price{
+  height: 22px;
+}
+.offer__text{
+  text-align: left;
+  margin: 15px 5%;
+}
