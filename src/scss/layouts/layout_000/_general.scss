@@ -1,23 +1,10 @@
-/*
-@font-face  {
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-    src: url('#{$fontsPath}slick.eot');
-    src: url('.#{$fontsPath}slick.eot?#iefix') format('embedded-opentype'),
-        url('#{$fontsPath}slick.woff') format('woff'),
-        url('#{$fontsPath}slick.ttf') format('truetype'),
-        url('#{$fontsPath}#slick') format('svg');
-}
-*/
-
 html {
   font-size: $baseFontSize;
 }
 
 body {
   font-family: $baseFontFamily;
-  background: url(http://fitcross.maskandesign.com/css/../images/text.jpg);
+  background: url(#{$imagesPath}bodybg.jpg);
 }
 
 h1,
@@ -52,39 +39,34 @@ textarea {
   outline: 0;
   outline-offset: 0;
 }
-.romb-out-block{
+.romb-out-block {
   text-align: center;
   position: relative;
   padding: 0 0 20px 0;
- // width: 100%;
-  display: inline-block
+  // width: 100%;
+  display: inline-block;
 }
 .romb-block {
   width: 365px;
-            height: 365px;
-            position: relative;
-            margin: auto;
-  // & img {
-  //   position: absolute;
-  //   transform: scale(1.37) rotate(-45deg);
-  //   left: 0;
-  //   top: 0;
-  // }
-}
-.romb-block-border {
-  z-index: 2;
-  transform: scale(0.725) rotate(45deg);
-  background: none;
-  color: #fff;
-  border: 2px solid #fff;
-  transition: all 0.3s;
-  position: absolute;
-  border-radius: 30px;
-  overflow: hidden;
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: -2px;
+  height: 365px;
+  position: relative;
+  margin: auto;
+
+  &-border {
+    z-index: 2;
+    transform: scale(0.725) rotate(45deg);
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: all 0.3s;
+    position: absolute;
+    border-radius: 30px;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: -2px;
+  }
 }
 .romb-inner-image {
   position: absolute;

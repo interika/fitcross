@@ -12,7 +12,7 @@ function initTablet() {
   menuContainer.hide();
   menuButton.show().removeClass("active");
 }
-
+//=======================================Counter STATISTIC
 function counerStart(offset) {
   var counterMemberOffset = $("#counter-member").offset();
   if (offset + 500 >= counterMemberOffset.top) {
@@ -86,31 +86,31 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     if (!counterMemberEnabled) {
-      initCounter(counterMember, 1550, 15, function() {
+      initCounter(counterMember, 1344, 15, function() {
         counterMemberEnabled = true;
       });
     }
 
     if (!counterTrainerEnabled) {
-      initCounter(counterTrainer, 777, 7, function() {
+      initCounter(counterTrainer, 240, 5, function() {
         counterTrainerEnabled = true;
       });
     }
 
     if (!counterClassEnabled) {
-      initCounter(counterClass, 55, 1, function() {
+      initCounter(counterClass, 32, 1, function() {
         counterClassEnabled = true;
       });
     }
 
     if (!counterEquipEnabled) {
-      initCounter(counterEquip, 12, 1, function() {
+      initCounter(counterEquip, 541, 10, function() {
         counterEquipEnabled = true;
       });
     }
   });
 });
-//===================================================3
+//===================================================
 ssm.addStates([
   {
     id: "mobile",
@@ -178,7 +178,7 @@ $(".slider").slick({
   ]
 });
 
-// =====================================SLIDER BLOG
+// =====================================SLIDER Menu-bg
 
 $(".blog-slider").slick({
   autoplay: true,
