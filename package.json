@@ -8,11 +8,6 @@
     "start": "webpack-dev-server  --env.mode development --progress --hide-modules --open",
     "build": "npm run webpack -- --env.mode production --display-error-details"
   },
-  "keywords": [
-    "Beetroot",
-    "Academy",
-    "Front-end"
-  ],
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.0",
