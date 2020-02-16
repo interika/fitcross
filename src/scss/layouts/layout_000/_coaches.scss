@@ -1,0 +1,112 @@
+.container-coaches {
+  background: url(../i/concrete.jpg) no-repeat;
+  background-size: cover;
+}
+.coaches-title {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 67px;
+  padding-bottom: 43px;
+  color: white;
+}
+.coaches-tit {
+  text-transform: uppercase;
+  font: 35px/44px Oswald;
+  text-transform: uppercase;
+  margin: 0;
+  &:after {
+    content: "";
+    display: block;
+    margin: 17px auto 15px;
+    width: 70px;
+    height: 1px;
+    background: #cfcfcf;
+  }
+}
+.coaches-text {
+  margin: 0 0 10px;
+  padding: 0 20px;
+}
+
+.coaches-slider {
+  &__item {
+    text-align: center;
+    position: relative;
+    padding: 0 0 20px 0;
+    width: 100%;
+    display: inline-block;
+  }
+}
+.coaches-photo {
+  &:hover .coaches-photo__text {
+    display: inline-block;
+    z-index: 3;
+  }
+  &__img {
+    &:hover .coaches-photo__text {
+      display: inline-block;
+      z-index: 3;
+      top: 250px;
+      transition:all 2s linear;
+    }
+  }
+
+  &__text {
+    padding: 25px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    background-color: #212121;
+    display: none;
+    align-self: center;
+    width: 50%;
+    height: 50%;
+    display: none;
+    top: 51px;
+    right: 67px;
+    z-index: 6;
+    opacity: 0.9;
+    position: absolute;
+    transition:all 2s linear;
+    &:hover {
+      display: inline-block;
+    }
+    &_p {
+      margin: auto;
+    }
+  }
+}
+.coaches__name {
+  position: absolute;
+  margin: -136px 8px 0;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.coaches-dotts {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  & ul {
+    list-style: none;
+    & li {
+      background: #b71c1c;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+      border-radius: 3px;
+      display: inline-block;
+      margin: 0 5px;
+      opacity: 0.5;
+      cursor: pointer;
+      &.slick-active {
+        opacity: 1;
+      }
+      & button {
+        text-indent: -9999px;
+      }
+    }
+  }
+}

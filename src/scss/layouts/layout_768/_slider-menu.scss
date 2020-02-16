@@ -1,0 +1,83 @@
+.disc-text{
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  top: 190px;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 76px;
+
+
+  &__title1{
+    font: 22px/30px Oswald;
+    display: block;
+    letter-spacing: 1px;
+    opacity: 0.8;
+   
+  }
+  &__title2{
+    margin: 10px 0 0;
+    font: 45px/58px Oswald;
+  }
+  &__text{
+    display: block;
+    width: 400px;
+    font: 300 14px/24px Oswald;
+  }
+}
+
+.train-but{
+  position: absolute;
+  top: 170px;
+  left: 520px;
+  display: inline-block;
+  // height: 100px;
+
+  &-items{
+    &__block{
+     
+    position: absolute;
+    background: $mainred;
+    width: 75px;
+    height: 75px;
+    transform: rotate(45deg);
+    margin: 5px 0 0 -2px;
+    border-radius: 8px; 
+    // top: 200px;
+    // left: 90px;
+      &_pos1{
+        top: 60px;
+        left: 70px;
+      }
+      &_pos2{
+        top: 115px;
+        left: 0;
+      }
+    }
+ 
+    &__text{
+      text-transform: uppercase;
+      text-align: center;
+      position: absolute;
+      color: white;
+      font: 400 16px/20px Oswald;
+      margin: 10px 15px 0 18px;
+      z-index: 1;
+      // top: 207px;
+      // left: 97px;
+      &_pos1{
+        top: 60px;
+        left: 70px;
+        margin: 20px 0 0 16px;    
+      }
+      &_pos2{
+        top: 115px;
+        left: 0;
+        margin: 20px 0 0 16px;    
+      }
+    }
+  } 
+}

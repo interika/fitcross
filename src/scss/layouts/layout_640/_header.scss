@@ -1,0 +1,153 @@
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &_margin {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  .hlogo {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 25px;
+
+    &__img {
+      position: absolute;
+      background: $mainred;
+      width: 45px;
+      height: 45px;
+      transform: rotate(45deg);
+      border-radius: 8px;
+    }
+    &__let {
+      color: white;
+      font: 700 24px Oswald;
+      z-index: 1;
+      margin-left: 10px;
+    }
+
+    &__title {
+      display: inline-block;
+      text-transform: uppercase;
+      margin-left: 28px;
+      color: white;
+      opacity: 0.4;
+            &_first{
+            margin:0;
+            font: 700 20px Oswald;
+            }
+            &_second{
+             font: normal 700 14px Oswald;
+             margin: -7px 0 -2px 0;
+            }
+             &_third{
+            font: normal 700 8px Oswald;
+            margin:0;
+            }
+    }
+    
+  }
+
+  .menu-search {
+    margin-right: 25px;
+    .menu-button {
+      .fas {
+        text-decoration: none;
+        position: absolute;
+        transition: all 0.3s;
+      }
+
+      .fa-bars {
+        opacity: 1;
+      }
+
+      .fa-times {
+        opacity: 0;
+        transform: rotate(90deg);
+      }
+
+      &.active {
+        .fa-bars {
+          opacity: 0;
+        }
+        .fa-times {
+          opacity: 1;
+          transform: rotate(0);
+        }
+        color: #fff;
+      }
+    }
+
+    &__im {
+      font-size: 23px;
+      color: #8d8d8d;
+    }
+  }
+
+  .container-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 340px;
+    z-index: 2;
+    background: #000000cf;
+    width: 200px;
+    padding-top: 50px;
+    &.active {
+      display: block;
+    }
+    .menu {
+      &-social {
+        &__ico {
+            display: flex;
+            justify-content:space-around;
+            
+          &_link {
+            display: inline-block;
+            margin-right: 6px;
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      &-search {
+        color: white;
+        z-index: 3;
+      }
+      &-nav {
+        width: 200px;
+        &__items {
+          list-style: none;
+          line-height: 40px;
+        }
+        &__item {
+          margin-right: 15px;
+          list-style: none;
+          color: white;
+          text-transform: uppercase;
+          text-align: right;
+          cursor: pointer;
+        }
+      }
+      &-logo {
+        &__lett {
+          display: none;
+        }
+      }
+    }
+  }
+  .svg-icon_menu {
+    width: 15px;
+    height: 15px;
+  }
+}

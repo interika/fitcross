@@ -1,0 +1,125 @@
+.container-blog {
+
+  margin: 0 auto;
+  padding-top: 67px;
+  padding-bottom: 43px;
+  text-align: center;
+  .blog-title {
+    font: 35px/44px Oswald;
+    text-transform: uppercase;
+    margin: 0;
+    color: #212121;
+    &:after {
+      content: "";
+      display: block;
+      margin: 17px auto 15px;
+      width: 70px;
+      height: 1px;
+      background: #cfcfcf;
+      margin: 17px auto 15px;
+    }
+  }
+  .blog-text {
+    margin: 0 10%;
+    color: black;
+    opacity: 0.5;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.coach-item {
+  margin:  0 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  display: block;
+  text-align: left;
+}
+.coach-photo {
+  width: 100%;
+  max-width: 560px;
+  position: relative;
+  height: auto;
+  max-height: 235px;
+  overflow: hidden;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  &:before {
+    border: 1px solid #fff;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    left: 3px;
+    bottom: 3px;
+    content: "";
+    display: block;
+    border-radius: 5px;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+}
+// .coach-photo_1Post{
+//   background:url(../i/g6.jpg) center top;
+// max-width: 560px;
+//   background-size: cover;
+//   height: 285px;
+// }
+.coach-proff {
+  margin: 26px 20px 10px;
+  font: 400 18px Oswald;
+  display: block;
+  text-transform: uppercase;
+}
+.coach-data {
+  font: italic 14px/20px;
+  display: block;
+  margin: 10px 0;
+  padding: 0 20px;
+  opacity: 0.5;
+}
+.coach-txt {
+  display: block;
+  padding: 15px 20px 0;
+  overflow: hidden;
+  opacity: 0.5;
+  line-height: 28px;
+}
+.blog-slider {
+  &__item {
+    padding: 0 10px;
+  }
+}
+.blog-dotts{
+    
+    .dotts-pagination{
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        & ul{
+          list-style: none;
+          & li{
+            background: #b71c1c;
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg);
+            border-radius: 3px;
+            display: inline-block;
+            margin: 0 5px;
+            opacity: 0.5;
+            cursor: pointer;
+            &.slick-active {
+              opacity: 1;
+            }
+            & button{
+              text-indent: -9999px;
+            }
+          }
+        }
+        
+       
+    }
+}

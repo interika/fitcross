@@ -1,0 +1,47 @@
+.container-schedule{
+    .schedule{
+        color: black;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 33px 15px;
+
+        &__title{
+        text-transform: uppercase;
+        font: 400 35px/44px Oswald;
+            &_let{
+                &:after{
+                content: "";
+                display: block;
+                margin: 17px auto 15px;
+                width: 70px;
+                height: 1px;
+                background: #cfcfcf;
+                margin: 17px auto 15px;
+                }
+            }  
+        }
+        &__days{
+            text-transform: uppercase;
+            display:flex;
+             flex-direction: row;
+            justify-content: space-around;
+             flex-wrap:wrap;
+        }
+        &__day{
+                font: 400 14px Oswald;
+                 padding: 0 10px;
+            &_first{
+                display: block;
+                font: 400 25px/41px Oswald;
+                        }
+            &_hour{
+                opacity:0.5;
+            }
+        }    
+            
+        
+
+    }
+}
+      

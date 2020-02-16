@@ -1,0 +1,39 @@
+.contact{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        text-transform: uppercase;
+        font: 35px/44px Oswald;
+        text-transform: uppercase;
+        margin: 0;
+        &:after {
+            content: "";
+            display: block;
+            margin: 17px auto 15px;
+            width: 70px;
+            height: 1px;
+            background: #000;
+        }
+    }
+    &-item{
+        font: 400 14px Oswald;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        color:$black;
+        text-align: center;
+        &__title{
+            color: #212121;
+            font: 400 25px/41px Oswald;
+        }
+        &__text{
+            opacity: 0.5;
+            color:$black;
+            & a{
+                text-decoration: none;
+                color:$black;
+            }
+        }
+    }
+}

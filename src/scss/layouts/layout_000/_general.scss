@@ -1,0 +1,86 @@
+html {
+  font-size: $baseFontSize;
+}
+
+body {
+  font-family: $baseFontFamily;
+  background: url(#{$imagesPath}bodybg.jpg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
+  min-width: 100%;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none !important;
+  color: $white;
+}
+a,
+button,
+input,
+textarea {
+  outline: none;
+}
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.romb-out-block {
+  text-align: center;
+  position: relative;
+  padding: 0 0 20px 0;
+  // width: 100%;
+  display: inline-block;
+}
+.romb-block {
+  width: 365px;
+  height: 365px;
+  position: relative;
+  margin: auto;
+
+  &-border {
+    z-index: 2;
+    transform: scale(0.725) rotate(45deg);
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: all 0.3s;
+    position: absolute;
+    border-radius: 30px;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: -2px;
+  }
+}
+.romb-inner-image {
+  position: absolute;
+  transform: scale(0.745) rotate(45deg);
+  border-radius: 30px;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  & img {
+    position: absolute;
+    transform: scale(1.37) rotate(-45deg);
+    left: 0;
+    top: 0;
+  }
+}
